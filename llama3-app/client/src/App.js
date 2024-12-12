@@ -36,7 +36,7 @@ export default function App() {
 
   return (
     <div className="chat-container">
-      <h1 className="chat-header">Llama3 Chat</h1>
+      <h1 className="chat-header">Llama3 Story Generator</h1>
 
       <form onSubmit={handleSubmit} className="chat-form">
         {error && <div className="error-message">{error}</div>}
