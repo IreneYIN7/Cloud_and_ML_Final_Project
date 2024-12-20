@@ -8,12 +8,6 @@ CORS(app)  # Enable CORS for React frontend
 
 # Environment variable for SageMaker endpoint
 SAGEMAKER_API_URL = os.getenv("SAGEMAKER_API_URL", "https://0kaqz13h1m.execute-api.us-east-1.amazonaws.com/default/sageMakerEndPointHandler")
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-
-app = Flask(__name__)
-CORS(app)  # Enable CORS for the frontend
-
 # Mocked API endpoint
 @app.route("/api/chat", methods=["POST"])
 def chat():
